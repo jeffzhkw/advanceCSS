@@ -1,0 +1,59 @@
+*{
+  box-sizing: border-box;
+}
+
+
+body, html{
+  margin: 0px;
+  padding: 0px;
+  background-color: #FEFEEF;
+}
+
+
+body{
+  font-family: sans-serif;
+}
+
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.main > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  border: 5px dashed black;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  height: 80vh;
+  width: 80vw;
+  background-color: #F16666;
+}
+
+.main h1{
+  margin: 0;
+  font-style: 'Montserrat';
+  font-size: 20vmax;
+  color: #121212;
+}
+
+.main > div:hover{
+  opacity: 1;
+  transition-duration: 0.7s;
+}
+div p {
+  margin: 0;
+  font-style: Georgia;
+  font-size: 5vh;
+  color: black;
+
+
+}
+
+div + div{
+
+}
