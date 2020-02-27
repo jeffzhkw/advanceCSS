@@ -32,11 +32,13 @@ body{
   height: 80vh;
   width: 80vw;
   background-color: #F16666;
+  transition-duration: 0.7s;
 }
+
 
 .main h1{
   margin: 0;
-  font-style: 'Montserrat';
+  font-family: 'Montserrat', bold;
   font-size: 20vmax;
   color: #121212;
 }
@@ -45,6 +47,65 @@ body{
   opacity: 1;
   transition-duration: 0.7s;
 }
+
+.circle{
+  border: 3px solid black;
+  border-radius: 100%;
+  height:10vmin;
+  width: 10vmin;
+  transition-duration: 0.7s;
+}
+
+.circle:hover{
+  border: 2px dashed black;
+  height:15vmin;
+  width: 15vmin;
+  transition-duration: 0.7s;
+}
+
+.main > div > div{
+  display:flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.square{
+  height:10vmin;
+  width: 10vmin;
+  opacity: 0;
+  transition-duration: 0.7s
+}
+
+.square:hover{
+  border: 3px solid black;
+  opacity: 1;
+  transition-duration: 0.7s
+}
+
+.main > div > div > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vmin;
+}
+
+.main > div > div > .circle{
+  text-align: center;
+  border-radius: 100%;
+  height:10vmin;
+  width: 10vmin;
+  opacity: 0;
+  transition-duration: 0.7s
+}
+
+.main > div > div > .circle:hover{
+  border: 3px solid black;
+  opacity: 1;
+  transition-duration: 0.7s
+}
+
+
+
 div p {
   margin: 0;
   font-style: Georgia;
